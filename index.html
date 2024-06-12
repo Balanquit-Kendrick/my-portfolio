@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ken-Dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/franken-ui-releases@0.0.13/dist/default.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.5/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="relative overflow-x-hidden">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky flex">
+            <nav class="uk-navbar-container h-[50px]" uk-navbar>
+                <div class="flex items-center">
+                    <div class="items-center pl-14">
+                        <img src="/assets/doge-1.svg" class="h-[36px]">
+                    </div>
+                    <div class=" absolute right-14">
+                        <ul class="uk-flex-inline uk-list">
+                            <a href="#about"><li class="py-2 pr-2 about">About</li></a>
+                            <a href="#projects"><li class="py-2 pr-2 about">Projects</li></a>
+                            <a href="#experience"><li class="py-2 pr-2 about">Experience</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <div class="w-1/24 p-2 fixed left-10 top-1/3">
+                <div>
+                    <ul>
+                        <li><img src="/assets/facebook.png" alt="facebook"></li>
+                        <li><img src="/assets/instagram.png" alt="instagram"></li>
+                        <li><img src="/assets/linkedin.png" alt="linkedin"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-1/24 p-2 fixed right-10 top-1/3 vertical-text">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kendrick.it.expert@gmail.com" class="about">kendrick.it.expert@gmail.com</a>
+            </div>
+            <div class="w-screen h-screen flex justify-center" id="about">
+                About
+            </div>
+            <div class="w-screen h-screen flex justify-center" id="projects">
+                Projects
+            </div>
+            <div class="w-screen h-screen flex justify-center" id="experience">
+                Experience
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+/* Custom CSS class to set height */
+.h-screen-minus-nav {
+    height: calc(100vh - 50px);
+}
+.vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+}
+.about{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+#about, #projects, #experience{
+    scroll-margin-top: 50px;
+}
+</style>
