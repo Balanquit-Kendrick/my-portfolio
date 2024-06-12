@@ -5,7 +5,7 @@
   animation: fadeIn 3s;
 }
 .img{
-    filter: drop-shadow(white 0px 0px 10px) grayscale(100%) ;
+    filter: drop-shadow(white 0px 0px 10px) grayscale(100%) blur(3px) ;
     transition: 1s;
 }
 
