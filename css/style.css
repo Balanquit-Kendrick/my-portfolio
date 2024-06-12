@@ -1,0 +1,128 @@
+.badge{
+    color:white;
+}
+.email , .nav-text, .frame, .logo  {
+  animation: fadeIn 3s;
+}
+.img{
+    filter: drop-shadow(white 0px 0px 10px) grayscale(100%) ;
+    transition: 1s;
+}
+
+.img:hover{
+    filter: drop-shadow(white 0px 0px 20px) grayscale(0%) ;
+
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+}
+.about{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+.email{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  transition: text-shadow 0.3s ease;
+}
+
+
+.button{
+    background-color: black;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button:hover{
+    background-color: white;
+    color:black;
+}
+
+.typing{
+    font-family: 'Courier New', Courier, monospace;
+}
+div.line{
+    line-height: 2.0;
+}
+.name{
+    text-shadow: 0 0 10px rgba(179, 179, 179, 0.8);
+    background-blend-mode: color;
+    opacity: 75;
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.email:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4), 
+                 0 0 40px rgba(255, 255, 255, 0.2);
+    background-blend-mode: color;
+    opacity: 75;
+    color:rgb(255, 255, 255);
+    padding: 0px 3px 0px 3px;
+    border-radius: 5px;
+}
+
+.frame{
+    transition: text-shadow 0.3s ease;
+}
+.frame:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4), 
+                 0 0 40px rgba(255, 255, 255, 0.2);
+    background-blend-mode: color;
+    opacity: 75;
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+#about, #projects, #experience{
+    scroll-margin-top: 50px;
+}
+.nav-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: normal;
+    padding: 0px 3px 0px 3px;
+    color: rgb(182, 182, 182);
+    transition: text-shadow 0.3s ease;
+}
+
+.nav-text:hover{
+   
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.6), 
+                 0 0 30px rgba(255, 255, 255, 0.4), 
+                 0 0 40px rgba(255, 255, 255, 0.2);
+    background-blend-mode: color;
+    opacity: 75;
+    color:rgb(255, 255, 255);
+    padding: 0px 3px 0px 3px;
+    border-radius: 5px;
+}
+
+:root {
+    --primary: 0 0% 0%;
+    --primary-foreground: 210 40% 98%;
+}
